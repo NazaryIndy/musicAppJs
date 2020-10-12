@@ -22,7 +22,10 @@ module.exports = {
       },
       {
         test: /\.mp3$/,
-        loader: 'file-loader'
+        loader: 'file-loader',
+        query: {
+          name: 'src/assets/sounds/[name].[hash:8].[ext]'
+        }
       }
     ]
   },
